@@ -1,0 +1,561 @@
+@charset "utf-8";
+/* 共通部分 */
+body{
+  font-family: 'Noto Sans JP', sans-serif;
+}
+.wrapper{
+  max-width: 1100px;
+  margin: 0 auto;
+}
+img{
+  max-width: 100%;
+}
+a{
+  text-decoration: none;
+  color: #000102;
+  display: block;
+}
+a:hover{
+  transform:scale(1.1);
+}
+li{
+  list-style: none;
+}
+.flex{
+  display: flex;
+  gap: 0 50px;
+  margin-top: 40px;
+}
+.nav-sp{
+  position: relative;
+}
+.nav-sp-list{
+  display: none;
+}
+.menu-button{
+  display: none;
+}
+.footer-contact{
+  display: none;
+}
+/* header */
+.header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top:24px;
+  margin-bottom:24px;
+}
+.nav-pc{
+  margin: 0 0 0 auto;
+}
+.nav-pc-list{
+  display: flex;
+}
+.nav-pc-list a:hover{
+  transform:scale(1.1);
+}
+.nav-pc-list li:not(:first-child){
+  margin-left: 16px;
+}
+/* hero*/
+.hero{
+  max-width: 1240px;
+  margin: 0 auto;
+}
+.hero-heading{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #fff;
+  width: 100%;
+}
+.hero-heading h1{
+  font-size: 48px;
+}
+.btn{
+  margin-top: 16px;
+}
+.btn-inner{
+  background-color: #3BB3DB;
+  padding: 10px 48px;
+  text-align: center;
+  border-radius: 5px;
+  color: #FFFFFF;
+  font-size: 18px;
+  position: relative;
+  box-shadow: 0 4px #FFFFFF;
+  width: 187px;
+  margin: 0 auto;
+}
+.btn-contact{
+  width: 375px;
+  margin: 0 auto;
+  margin-top: 32px;
+}
+
+.btn-contact dl{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content:space-around;
+  align-items: center;
+  color: #FFFFFF;
+  background: #005DBB;
+  padding:7px 0 13px 0;
+}
+.btn-contact dt{
+  margin-bottom: 9px;
+  font-size: 12px;
+  text-align: center;
+  width: 100%;
+}
+.btn-contact .btn-inner{
+  display: block;
+  width: 150px;
+  font-size: 14px;
+  padding: 10px;
+}
+.hero-inner{
+  position: relative;
+}
+/* news */
+.news{
+  text-align: center;
+  margin-top: 40px;
+}
+.news-title{
+  text-align: center;
+  display: inline-block;
+  position: relative;
+}
+.news-title:before {
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: -13px;
+  display: inline-block;
+  width: 80px;
+  height: 10px;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  background-color: #707070;
+}
+.news-list{
+  width: 640px;
+  margin: 0 auto;
+}
+.news-list li{
+  display: flex;
+  padding:24px 0 8px 30px;
+  border-bottom:5px dashed #707070;
+}
+.news-day{
+  margin: 0 48px 0 0;
+  font-size: 20px;
+}
+.news-text{
+  font-size: 20px;
+}
+.news-btn{
+  margin-top: 18px;
+  text-align: center;
+}
+.news-btn-inner{
+  padding: 11px 54px 13px 54px;
+  background-color: #015EBB;
+  color: #fff;
+  border-radius: 100vh;
+  margin-top:18px;
+  margin: 0 auto;
+  width: 148px;
+}
+/* 各種マニュアル */
+.card {
+  display: flex;
+  flex-direction: column;
+  width: 33%;
+  word-wrap: break-word;
+  background-color: #fff;
+  background-clip: border-box;
+  border: 0;
+  color: #333;
+  text-decoration: none;
+}
+
+.card-image {
+  width: 100%;
+  object-fit: contain;
+}
+
+.card-box {
+  padding: 1rem;
+  background-color: #3BB3DB;
+  text-align: center;
+  color: #fff;
+  height: 150px;
+}
+
+.card-title {
+  margin: 8px 0;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.card-description {
+  margin-bottom: 16px;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+/* プロが作るマニュアル「5つの特徴」 */
+.main-content{
+  margin-top: 40px;
+}
+.main-content-title{
+  margin-bottom: 40px;
+}
+.content {
+  display: flex;
+  margin-bottom: 24px;
+}
+.content:last-child{
+  margin-bottom: 0;
+}
+.content-inner-heading{
+  margin-bottom: 16px;
+}
+.content-img{
+  width: 45%;
+  margin-right: 5%;
+}
+.content-inner{
+  width: 50%;
+}
+
+/* moovie*/
+.moovie-list-item{
+  width: 33%;
+}
+video{
+  width: 100%;
+}
+
+/* マニュアルの種類・カラム */
+.manual{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+}
+.manual-inner{
+  width: 45%;
+  margin: 0 2.3%;
+}
+.manual-title{
+  width: 100%;
+  padding: 13px 0 13px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #FFFFFF;
+  background: #005DBB no-repeat right;
+}
+.manual-type-icon{
+  background-image: url(../assets/bg_nav_sub_type_01.png);
+}
+.manual-column-icon{
+  background-image: url(../assets/bg_nav_sub_column_01.png);
+}
+.manual-list-item{
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 13px 0 13px 20px;
+  font-size: 16px;
+  color:#3B4043;
+  border: solid #707070 1px;
+  height: 52px;
+}
+.icon{
+  margin-right: 8px;
+}
+/* footer */
+.footer{
+  padding: 20px 0;
+  font-size: 12px;
+  color: #FFFFFF;
+  background: #808080;
+  margin-top: 80px;
+}
+.footer-inner{
+  display: flex;
+  justify-content: space-between;
+  max-width: 1240px;
+  margin: 0 auto;
+}
+.nav-footer-list {
+    display: flex;
+    gap: 10px;
+    list-style: none;
+    margin: 0;
+}.nav-footer-list a{
+  color: #FFFFFF;
+}
+@media (max-width: 600px){
+   /* ハンバーガメニュー */
+   .menu-button-inner {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+  }
+  .menu-button-inner span {
+    display: inline-block;
+    width: 100%;
+    height: 2px;
+    background-color: #98A6B5;
+    position: absolute;
+    transition: .4s;
+    box-sizing: border-box;
+  }
+  .menu-button-inner span:nth-child(1) {
+    top: 0;
+  }
+  .menu-button-inner span:nth-child(2) {
+    top: 0;
+    bottom: 0;
+    margin: auto;
+  }
+  .menu-button-inner span:nth-child(3) {
+    bottom: 0;
+  }
+  /* ハンバーガーメニューアニメーション */
+  .menu-button-inner.active span:nth-child(1) {
+    top: 0px;
+    transform: translateY(12px) rotate(-45deg);
+    width: 100%;
+  }
+  .menu-button-inner.active span:nth-child(2) {
+    opacity: 0;/*真ん中の線は透過*/
+  }
+  .menu-button-inner.active span:nth-child(3){
+    bottom: 0px;
+    transform: translateY(-12px) rotate(45deg);
+    width: 100%;
+  }
+  .nav-sp-list {
+    width: 100%;
+    height: 100vh;
+    background-color: #015EBB;
+    position: fixed;
+    z-index: 100;
+    top: 75px;
+    left: 0;
+    border-bottom: 0.1px solid;
+  }
+  ul.nav-sp-list li {
+    text-align: center;
+    color: #FFFFFF;
+    padding:0 0 16px 0;
+  }
+  ul.nav-sp-list li:first-child {
+    margin-top: 32px;
+  }
+  ul.nav-sp-list li a{
+    font-size: 18px;
+    color: #FFFFFF;
+  }
+  .menu-button {
+    position: absolute;
+    top: 1%;
+    right: 0%;
+    display: block;
+    width: 70px;
+    height: 70px;
+    padding: 22px 18px;
+    margin: 0 0 0 auto;
+  }
+
+  /* header */
+  .header{
+    margin-top:19px;
+    margin-bottom:18px;
+    margin-left: 24px;
+  }
+  .header-logo img{
+    width: 58%;
+  }
+  .nav-pc-list{
+    display: none;
+  }
+  /* hero */
+  .hero-heading h1{
+    font-size: 24px;
+    margin-bottom: 16px;
+  }
+  .btn-contact{
+    display: none;
+  }
+  .hero-heading .btn-inner {
+    font-size: 14px;
+    padding: 7px 42px 9px 40px;
+    width: 152px;
+  }
+  /* news */
+  .news {
+    margin-top: 16px;
+  }
+  .news-list{
+    width: 356px;
+  }
+  .news-title:before {
+    bottom: -10px;/*線の上下位置*/
+    height: 10px;/*線の太さ*/
+  }
+  .news-list li {
+    padding: 24px 0 8px 0px;
+  }
+  .news-day,.news-text{
+    font-size: 16px;
+  }
+  .news-day{
+    margin: 0 16px 0 8px;
+    font-size: 16px;
+    width: 50%;
+  }
+  .news-text{
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+  }
+  .news-btn-inner {
+    font-size: 10px;
+    padding: 7px 39px 10px 35px;
+    width: 99px;
+  }
+  /* 各種マニュアル */
+  .flex{
+    flex-direction: column;
+    margin-top: 0;
+  }
+  .card{
+    width: 88%;
+    margin: 0 auto;
+  }
+  .card:not(:last-child){
+    margin-bottom: 24px;
+  }
+  .card:first-child{
+    margin-top: 32px;
+  }
+  /* プロが作るマニュアル「5つの特徴」 */
+  .main-content{
+    margin-top: 0;
+  }
+  .main-content-title{
+    font-size: 18px;
+    margin: 32px 0 19px 21px;
+  }
+  .scroll{
+    display: flex;
+    width: 100%;
+    height: 462px;
+    overflow-x: scroll;
+    position: relative;
+  }
+  .content {
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    flex-shrink: 0;
+    margin-right: 24px;
+    position: relative;
+  }
+  .content:last-child{
+    margin-bottom: 24px;
+  }
+  .content-img{
+    width: 100%;
+    margin-right: 0%;
+  }
+  .content-inner{
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    width: 84%;
+    border: solid 3px #025CBD;
+    height: 300px;
+    background-color: #FFFFFF;
+  }
+  .content-inner-heading{
+  font-size: 16px;
+  font-weight: bold;
+  padding: 8px 0 0 16px;
+  }
+  .content-inner-description{
+  font-size: 14px;
+  padding: 0 16px;
+  }
+  /* マニュアルの種類・コラム */
+  .manual{
+    flex-direction: column;
+    margin-top: 32px;
+  }
+  .manual-inner{
+    width: 100%;
+    margin: 0;
+  }
+  /* moovie */
+  .moovie-list {
+    margin-top: 32px;
+  }
+  .moovie-list li {
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 24px;
+  }
+  .moovie-list li:last-child {
+    margin-bottom: 0;
+  }
+  /* footer */
+  .footer{
+    margin-top: 48px;
+    padding-bottom: 101px;
+  }
+  .footer-contact{
+    display: block;
+    position: fixed;
+    z-index: 1;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+  }
+  .footer-contact dl {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    color: #FFFFFF;
+    background: #005DBB;
+    padding: 5px 10px 12px 10px;
+  }
+  .footer-contact dt{
+    margin-bottom: 5px;
+    text-align: center;
+    width: 100%;
+  }
+  .footer-contact .btn-inner{
+    display: block;
+    width: 100%;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 8px 0;
+  }
+  .footer-contact dd {
+    width: calc(50% - 5px);
+  }
+}
